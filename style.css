@@ -1,0 +1,63 @@
+.encabezado .nav-link,
+.encabezado .navbar-brand {
+  color: white;
+}
+
+.carousel-img {
+    height:39dvw;
+    object-fit: cover;
+}
+
+#KTM{
+  background-color: #F27620;
+}
+
+.btn-color:hover {
+  background-color: rgba(205, 205, 205, 0.15);
+  color: white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon,
+.carousel-indicators{
+  filter: invert(1);
+}
+.nav-link:hover{
+  color: rgb(34, 114, 255);
+}
+
+.pad{
+  padding: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.card{
+  height: 50vh;
+  background-color: #212529;
+  color: white;
+  border-radius: 2em;
+}
+.card-img-top {
+  height: 15em;
+  object-fit: cover;
+}
+
+.img-encabezado {
+  width: 100%;
+  height: 30em;
+}
+
+img.ktm {
+ border-radius: 2em;
+}
+
+
+
