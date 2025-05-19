@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../style_marcas.css">
+    <script src="../algo.js"></script>
+    <title>Suzuki</title>
+</head>
+
+<header class="fixed-top encabezado">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Biker Zone</a>
+      <button class="navbar-toggler" type="button" title="Desplegable" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link fs-4 fs-md-3" href="../formulario-contacto.html" title="Contactenos">  
+              <i class="bi bi-info-circle-fill"> Sobre Nosotros</i>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link fs-4 fs-md-3" href="../Nosotros.html" title="Nosotros">  
+              <i class="bi bi-file-person-fill">Nosotros</i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-4 fs-md-3" href="../Sobre_Nosotros.html" title="Contactenos">  
+              <i class="bi bi-telephone-forward-fill"> Contacto</i>
+            </a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fs-4 fs-md-3" href="#" id="motosDropdown" role="button" data-bs-toggle="dropdown">Marcas</a>  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="motosDropdown">
+              <li><a class="dropdown-item" href="./Ducati.html">Ducati</a></li>
+              <li><a class="dropdown-item" href="./KTM.html">KTM</a></li>
+              <li><a class="dropdown-item" href="./Honda.html">Honda</a></li>
+              <li><a class="dropdown-item" href="./Yamaha.html">Yamaha</a></li>
+              <li><a class="dropdown-item" href="./Suzuki.html">Suzuki</a></li>
+              <li><a class="dropdown-item" href="./BMW.html">BMW</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<body>
+
+  <img src="../Imagenes/Suzuki.svg" alt="KTM" class="img-fluid img-encabezado">
+  <audio id="sonidoClick" src="../audio.mp3" preload="auto"></audio>
+
+
+  <div class="container mt-5">
+    <h1 class="text-center">Bienvenido a Suzuki</h1>
+
+    <div class="pad2"></div>
+
+    <div class="row">
+
+
+      <div class="col-6 col-lg-4">
+        <div class="card suzuki">
+            <img src="../Imagenes/Suzuki/GSX-S1000GT_2022.jpg" class="card-img-top" alt="GSX S1000 GT">
+            <div class="card-body">
+                <h5 class="card-title">GSX S1000 GT 2022</h5>
+                <p class="card-text">
+                  <ul>
+                    <li>Motor: 999 cc</li>
+                    <li>Potencia: 150 hp</li>
+                    <li>Torque: 106 Nm</li>
+                    <li>Peso: 226 kg</li>
+                    <li>Precio: 14.999 €</li>
+                  </ul>
+                </p>
+                <a class="btn btn-primary" data-bs-toggle="modal" id="sonar" data-bs-target="#Modal1">Ampliar Imagen</a>
+            </div>
+        </div>
+
+        <div class="modal" tabindex="-1" id="Modal1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title"><strong>GSX S1000 GT</strong></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="../Imagenes/Suzuki/GSX-S1000GT_2022.jpg" alt="GSX S1000GT" class="img-fluid ampli">
+              </div>
+              <div class="modal-footer">
+                <a class="btn btn-primary" class="btn btn-secondary" id="parar" data-bs-dismiss="modal">Close</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-6 col-lg-4">
+        <div class="card suzuki">
+            <img src="../Imagenes/Suzuki/DR-Z4SM_2025.jpg" class="card-img-top" alt="DR-Z4SM">
+            <div class="card-body">
+                <h5 class="card-title">DR Z4SM 2025</h5>
+                <p class="card-text">
+                  <ul>
+                    <li>Motor: 398 cc</li>
+                    <li>Potencia: 40 hp</li>
+                    <li>Torque: 35 Nm</li>
+                    <li>Peso: 145 kg</li>
+                    <li>Precio: 7.499 €</li>
+                  </ul>
+                </p>
+                <a class="btn btn-primary" data-bs-toggle="modal" id="sonar" data-bs-target="#Modal2">Ampliar Imagen</a>
+            </div>
+        </div>
+
+        <div class="modal" tabindex="-1" id="Modal2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title"><strong>DR-Z4SM 2025</strong></h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="../Imagenes/Suzuki/DR-Z4SM_2025.jpg" alt="DR Z4SM" class="img-fluid ampli" >
+              </div>
+              <div class="modal-footer">
+                <a class="btn btn-primary" class="btn btn-secondary" id="parar" data-bs-dismiss="modal">Close</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-6 col-lg-4">
+        <div class="card suzuki">
+            <img src="../Imagenes/Suzuki/GSX-S125_2024.jpg" class="card-img-top" alt="GSX S125">
+            <div class="card-body">
+                <h5 class="card-title">GSX S125 2024</h5>
+                <p class="card-text">
+                  <ul>
+                    <li>Motor: 124 cc</li>
+                    <li>Potencia: 15 hp</li>
+                    <li>Torque: 11 Nm</li>
+                    <li>Peso: 134 kg</li>
+                    <li>Precio: 4.999 €</li>
+                  </ul>
+                </p>
+                <a class="btn btn-primary" data-bs-toggle="modal" id="sonar" data-bs-target="#Modal3">Ampliar Imagen</a>
+            </div>
+        </div>
+
+        <div class="modal" tabindex="-1" id="Modal3">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title"><strong>Super Duke GT 1290 2024</strong></h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="../Imagenes/Suzuki/GSX-S125_2024.jpg" alt="GSX S125" class="img-fluid ampli" >
+              </div>
+              <div class="modal-footer">
+                <a class="btn btn-primary" class="btn btn-secondary" id="parar" data-bs-dismiss="modal">Close</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pad2"></div>
+    
+</body>
+
+
+<footer class="bg-dark text-white text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mt-5 text-md-start">  <p>Concesionario de motos BikerZone</p>
+                <p>Dirección: Calle de la Moto, 123, Madrid</p>
+            </div>
+            <div class="col-md-6 mt-3 text-md-end">    <a href="../formulario-contacto.html">Contacta con nosotros</a>
+                <p>Teléfono: <a href="tel:+34666666666">666666666</a></p>
+                <p>Email: <a href="mailto:atencion@bikerzone.com">atencion@bikerzone.com</a></p>
+                <p>Redes sociales: 
+                    <a href="https://www.facebook.com/BikerZone" target="_blank" rel="noopener" title="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/BikerZone" target="_blank" rel="noopener" title="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.x.com/BikerZone" target="_blank" rel="noopener" title="Twitter"><i class="bi bi-twitter"></i></a>
+                </p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <p>©2025 BikerZone. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
