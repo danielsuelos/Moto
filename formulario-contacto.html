@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./style.css">
+    <script src="Validacion_form.js"></script>
     <title>Contactenos</title>
 </head>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 <header class="fixed-top encabezado">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -19,29 +20,35 @@
       <button class="navbar-toggler" type="button" title="Desplegable" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
         <span class="navbar-toggler-icon"></span>
       </button>
-  
+
       <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
         <ul class="navbar-nav">
+
           <li class="nav-item">
-            <a class="nav-link fs-4" href="#" title="Nosotros">
-              <i class="bi bi-file-person-fill"></i>
+            <a class="nav-link fs-4 fs-md-3" href="./formulario-contacto.html" title="Contactenos">  
+              <i class="bi bi-info-circle-fill"> Sobre Nosotros</i>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link fs-4 fs-md-3" href="./Nosotros.html" title="Nosotros">  
+              <i class="bi bi-file-person-fill">Nosotros</i>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-4" href="./formulario-contacto.html" title="Contactenos">
-              <i class="bi bi-telephone-forward-fill"></i>
+            <a class="nav-link fs-4 fs-md-3" href="./Sobre_Nosotros.html" title="Contactenos">  
+              <i class="bi bi-telephone-forward-fill"> Contacto</i>
             </a>
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="motosDropdown" role="button" data-bs-toggle="dropdown">Marcas</a>
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="motosDropdown">
+            <a class="nav-link dropdown-toggle fs-4 fs-md-3" href="#" id="motosDropdown" role="button" data-bs-toggle="dropdown">Marcas</a>  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="motosDropdown">
               <li><a class="dropdown-item" href="./Marcas/Ducati.html">Ducati</a></li>
               <li><a class="dropdown-item" href="./Marcas/KTM.html">KTM</a></li>
-              <li><a class="dropdown-item" href="#">Honda</a></li>
-              <li><a class="dropdown-item" href="#">Yamaha</a></li>
-              <li><a class="dropdown-item" href="#">Suzuki</a></li>
-              <li><a class="dropdown-item" href="#">BMW</a></li>
+              <li><a class="dropdown-item" href="./Marcas/Honda.html">Honda</a></li>
+              <li><a class="dropdown-item" href="./Marcas/Yamaha.html">Yamaha</a></li>
+              <li><a class="dropdown-item" href="./Marcas/Suzuki.html">Suzuki</a></li>
+              <li><a class="dropdown-item" href="./Marcas/BMW.html">BMW</a></li>
             </ul>
           </li>
         </ul>
@@ -49,14 +56,23 @@
     </div>
   </nav>
 </header>
-<div class="pad"></div>
+
 
 
 <body>
     <div class="pad"></div>
     <div class="container mt-5">
       <h1 class="text-center"><strong>Contacte con nosotros</strong></h1>
-      <form class="needs-validation">
+
+      <div id="success-alert" class="alert alert-success d-none" role="alert">
+        ¡Formulario enviado correctamente!
+      </div>
+
+      <div id="error-alert" class="alert alert-danger d-none" role="alert">
+        Por favor, corrige los errores antes de enviar el formulario.
+      </div>
+
+      <form class="needs-validation" novalidate id="contact-form">
         <div class="mb-3">
           <label for="name" class="form-label">Nombre</label>
           <input type="text" class="form-control" id="name" placeholder="Introduce tu nombre" required>
@@ -90,37 +106,34 @@
 
         <button type="submit" class="btn btn-primary">Enviar</button>
       </form>
+
     </div>
     <div class="pad"></div>
 </body>
 
 
 
-<!-- Footer -->
 <footer class="bg-dark text-white text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col mt-5">
-        <p>Concesionario de motos BikerZone</p>
-        <p>Dirección: Calle de la Moto, 123, Madrid</p>
-      </div>
-      <div class="col-6 col-lg-4"></div>
-      <div class="col-6 col-lg-3"></div>
-      <div class="col mt-3">
-        <a href="./formulario-contacto.html">Contacta con nosotros</a>
-        <p>Teléfono: <a href="tel:+34666666666">666666666</a></p>
-        <p>Email: <a href="mailto:atencion@bikerzone.com">atencion@bikerzone.com</a></p>
-        <p>Redes sociales: 
-          <a href="https://www.facebook.com/BikerZone" target="_blank" rel="noopener" title="Facebook"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/BikerZone" target="_blank" rel="noopener" title="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.x.com/BikerZone" target="_blank" rel="noopener" title="Twitter"><i class="bi bi-twitter"></i></a>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <p>&reg;2025 BikerZone. Todos los derechos reservados.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mt-5 text-md-start">  <p>Concesionario de motos BikerZone</p>
+                <p>Dirección: Calle de la Moto, 123, Madrid</p>
+            </div>
+            <div class="col-md-6 mt-3 text-md-end">    <a href="./formulario-contacto.html">Contacta con nosotros</a>
+                <p>Teléfono: <a href="tel:+34666666666">666666666</a></p>
+                <p>Email: <a href="mailto:atencion@bikerzone.com">atencion@bikerzone.com</a></p>
+                <p>Redes sociales: 
+                    <a href="https://www.facebook.com/BikerZone" target="_blank" rel="noopener" title="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/BikerZone" target="_blank" rel="noopener" title="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.x.com/BikerZone" target="_blank" rel="noopener" title="Twitter"><i class="bi bi-twitter"></i></a>
+                </p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <p>©2025 BikerZone. Todos los derechos reservados.</p>
+            </div>
+        </div>
     </div>
 </footer>
 </html>
