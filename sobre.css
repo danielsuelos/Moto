@@ -1,0 +1,87 @@
+.pad{
+  padding: 2em;
+}
+
+.encabezado .nav-link,
+.encabezado .navbar-brand {
+  color: white;
+}
+
+.nav-link:hover{
+  color: rgb(34, 114, 255);
+}
+
+.pad{
+  padding: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#about {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#about h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 300px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+/* Colores para cada ícono */
+.mission-icon {
+  color: #007BFF;
+}
+
+.team-icon {
+  color: #28a745;
+}
+
+.vision-icon {
+  color: #ffc107;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+  margin: 0;
+}
+div > i {
+  font-size: 2em;
+}
+
+
+
