@@ -29,6 +29,9 @@
 .pad{
   padding: 3em;
 }
+.pad2{
+  padding: 2em;
+}
 
 a {
   text-decoration: none;
@@ -36,9 +39,10 @@ a {
 }
 
 footer {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
+
  .ktm.card {
   border-radius: 2em;
   height: 68dvh;
@@ -46,6 +50,23 @@ footer {
 .card.ducati{
   border-radius: 2em;
   height: 74dvh;
+}
+.card.honda{
+  border-radius: 2em;
+  height: 61dvh;
+}
+
+.honda > .card-img-top{
+  max-height: 14em;
+}
+
+.card.suzuki{
+  border-radius: 2em;
+  height: 66.5dvh;
+}
+
+.suzuki > .card-img-top{
+  max-height: 17em;
 }
 
 .img-encabezado {
@@ -56,4 +77,8 @@ footer {
 .ampli{
 width: 100dvh;
 height: 45dvh;
+}
+
+.card-img-top{
+  border-radius: 2em;
 }
